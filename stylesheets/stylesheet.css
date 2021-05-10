@@ -1,0 +1,132 @@
+/* CSS Document */
+
+body{    
+    margin: 0 auto
+}
+#content-wrapper{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1000px;
+    box-shadow: 1px 0px 10px 5px lightgray;
+    width: 100%;
+    
+}
+#push{
+    height: 50px;
+}
+header{
+    margin: 0;
+}
+footer{
+    flex-shrink: 0;
+    margin-left: 2%;
+    margin-top: auto;
+    color: gray;
+}
+article{
+    display: inline-block;
+    float: left;
+    flex-wrap: wrap;
+    margin: 0 2% auto 2%;
+}
+figure{
+    margin: 2%;
+    margin-top: 0;
+    width: 30%;
+}
+figure img{
+    width: 100%;
+}
+figcaption{
+    font-size: 1em;
+    text-align: justify;
+    font-family: 'Bangers', cursive;
+}
+#penguin{
+    float:right;
+}
+#hippo{
+    float: left;
+}
+p{
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Rajdhani', sans-serif;
+}
+.link a {
+    justify-content: center;
+    display: flex;
+    vertical-align: middle;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+.link {
+    width: 25%;
+    background-color: navy;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.link:hover {
+    filter: brightness(80%)
+}
+* {
+    box-sizing: border-box;
+}
+#centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Fredoka One', cursive;
+    font-size: 49px;
+    width: 80%;
+    height: auto;
+    display: inline;
+    -webkit-text-stroke: 1px black;
+    color:lightblue;
+    text-align: center;
+    
+}
+#banner{
+    position: relative;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#banner img{
+    width: auto;
+    max-height: 150px
+}    
+@media (max-width: 629px){
+    .link{
+        height: 80px;
+        transition: 0.2s;
+    }
+}
+
+@media (min-width: 630px) and (max-width: 999px){
+    .link{
+        height: 60px;
+        transition: 0.2s;
+    }
+}
+@media (min-width: 1000px){
+    .link{
+        height: 45px;
+        transition: 0.2s;
+    }
+}
+@media (max-width: 504px){
+    #centered{
+        width: 90%;
+    }
+}
