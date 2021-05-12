@@ -11,7 +11,7 @@ body{
     max-width: 1000px;
     box-shadow: 1px 0px 10px 5px lightgray;
     width: 100%;
-    
+    background-color: lightgoldenrodyellow;
 }
 #push{
     height: 50px;
@@ -44,10 +44,20 @@ figcaption{
     text-align: justify;
     font-family: 'Bangers', cursive;
 }
-#penguin{
+form{
+    width: 100%;
+    display: inline-block;
+    
+    
+}
+.formwrapper{
+    text-align: center;
+    margin: 0 10% 0 10%;
+}
+#pizza{
     float:right;
 }
-#hippo{
+#burger{
     float: left;
 }
 p{
@@ -55,6 +65,19 @@ p{
     text-align: justify;
     font-family: 'Rajdhani', sans-serif;
 }
+input{
+    text-align: right;
+}
+.submit{
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+}
+.details{
+    text-align: left;
+    font-size: 14px;
+    font-style: italic;
+}
+
 .link a {
     justify-content: center;
     display: flex;
@@ -76,7 +99,7 @@ p{
     transition: 0.2s;
 }
 .link:hover {
-    filter: brightness(80%)
+    filter: brightness(200%)
 }
 .home{
     width: 4%;
@@ -87,6 +110,9 @@ p{
 .selected a {
     color: black;
 }
+.full{
+    width: 100%;
+}
 * {
     box-sizing: border-box;
 }
@@ -95,15 +121,70 @@ p{
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+.fancytext{
+    font-family: 'Fredoka One', cursive; 
     font-size: 49px;
-    width: 80%;
     height: auto;
     display: inline;
     -webkit-text-stroke: 1px black;
     color:lightblue;
+}
+.textcentered{
+    text-align: center;
+}.menu{
+    text-align: right;
+    width: 100%;
+    align-self: center;
+    border-spacing: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+.menuheader{
+    font-family: 'Fredoka One', cursive;
+    color: red;
+    -webkit-text-stroke: 1px black;
+    font-size: 24px;
+    
+}
+.menuitem{
+    text-align: left;
+    
+}
+td{
+    border-bottom: 1px solid black;
+}.orderinfo{
+    width: 70%;
+    margin: auto;
     text-align: center;
     
+}
+.orderinfo td{
+    width:100%;
+    text-align: left;
+}
+.pizzabg{
+    background-image: url("../images/pizza-1327883.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pastabg{
+    background-image: url("../images/spaghetti-texture-1197568.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.burgerbg{
+    background-image: url("../images/burger-on-a-plate-1328009.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chickenbg{
+    background-image: url("../images/grilled-chicken-legs-1324574.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #banner{
     position: relative;
@@ -111,6 +192,12 @@ p{
     display:flex;
     align-items: center;
     justify-content: center;
+    background-image: url("../images/pizza1.jpg");
+    background-color: lightgoldenrodyellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    max-width: 1000px;
     
 }
 #banner img{

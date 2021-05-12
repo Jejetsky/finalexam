@@ -13,7 +13,7 @@
 <body>
 <div id="content-wrapper">
   <header>
-    <div id="banner"><img src="../images/pizza1.jpg" alt=""><div id="centered">David Rojevsky</div></div>
+    <div id="banner"><div id="centered" class="fancytext">David Rojevsky</div></div>
     <nav>
       <div class="link home"><a target="_self" href="../index.html"><img src="../images/home_white_24dp.svg" alt=""/></a></div>
       <div class="link"><a target="_self" href="pizzas.html">Pizza</a></div>
@@ -24,8 +24,285 @@
       <div class="link selected"><a target="_self" href="order.html"><img src="../images/shopping_cart_black_24dp.svg" alt=""/>Order Online</a></div>
     </nav>
     </header>
-
-  
+    <div class="fancytext textcentered full">Order Ahead, Save Some Time!</div>
+  <div class="formwrapper">
+    <form action="thanks.html">
+      <table class="menu">
+          
+        <tbody>
+          <tr class="menuheader">
+            <td class="menuitem" colspan="2">Pizza&nbsp;</td>
+            <td>Small</td>
+            <td>Quantity</td>
+            <td>Large</td>
+            <td>Quantity</td>
+          </tr>
+          <tr>
+            <td class="menuitem" colspan="2">Cheese&nbsp;</td>
+            <td>&#36; 7.99</td>
+            <td><input type="number" name="cheeseSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+            <td>&#36; 9.99</td>
+            <td><input type="number" name="cheeseLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+          </tr>
+          <tr>
+            <td class="menuitem" colspan="2">Pepperoni&nbsp;</td>
+            <td>&#36; 8.99</td>
+            <td><input type="number" name="pepperoniSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+            <td>&#36; 10.99</td>
+            <td><input type="number" name="pepperoniLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+          </tr>
+          <tr>
+            <td class="menuitem" colspan="2">Chicken&nbsp;</td>
+            <td>&#36; 8.99</td>
+            <td><input type="number" name="chickenSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+            <td>&#36; 10.99</td>
+            <td><input type="number" name="chickenLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+          </tr>
+            <tr> &nbsp;</tr>
+      <tr class="menuheader">
+      <td class="menuitem" colspan="2">Pasta&nbsp;</td>
+      <td>Small</td>
+      <td>Quantity</td>
+      <td>Large</td>
+      <td>Quantity</td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Mac &amp; Cheese &nbsp;</td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="macSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="macLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Spaghetti&nbsp;</td>
+      <td>&#36; 6.99</td>
+        <td><input type="number" name="spagSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 7.99</td>
+        <td><input type="number" name="spagLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+            <tr>
+      <td class="menuitem" colspan="2">Fettucine Alfredo&nbsp;</td>
+      <td>&#36; 7.99</td>
+        <td><input type="number" name="fettSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 9.99</td>
+        <td><input type="number" name="fettLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+        <tr> &nbsp;</tr>
+    <tr class="menuheader">
+      <td class="menuitem" colspan="2">Sandwiches&nbsp;</td>
+      <td>Solo</td>
+        <td>Quantity</td>
+      <td>Meal</td>
+        <td>Quantity</td>
+    </tr>
+        <tr><td colspan="6" class="details">Solo sandwiches are sandwich only. Meals include a side of fries and a pickle.&nbsp;</td></tr>
+            <tr>
+      <td class="menuitem" colspan="2">Chicken&nbsp;</td>
+      <td>&#36; 6.99</td>
+        <td><input type="number" name="chicksandSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 7.99</td>
+        <td><input type="number" name="chicksandLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Cheeseburger&nbsp;</td>
+      <td>&#36; 7.99</td>
+        <td><input type="number" name="burgSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 9.99</td>
+        <td><input type="number" name="burgLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Roast Beef&nbsp;</td>
+      <td>&#36; 8.99</td>
+        <td><input type="number" name="roastSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 10.99</td>
+        <td><input type="number" name="roastLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>     
+    <tr> &nbsp;</tr>
+    <tr class="menuheader">
+      <td class="menuitem" colspan="2">Chicken&nbsp;</td>
+      <td>6-Piece</td>
+        <td>Quantity</td>
+      <td>8-Piece</td>
+        <td>Quantity</td>
+    </tr>
+        <tr>
+      <td class="menuitem" colspan="2">Nuggets&nbsp;</td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="nuggetsSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="nuggetsLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Wings&nbsp;</td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="wingsSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 4.99</td>
+        <td><input type="number" name="wingsLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Tenders&nbsp;</td>
+      <td>&#36; 4.99</td>
+        <td><input type="number" name="tendersSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 5.99</td>
+        <td><input type="number" name="tendersLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr> &nbsp;</tr>
+        </tbody>
+  </table>
+        <div class="fancytext textcentered full">Lunch Menu</div>
+        <div class="details textcentered">Lunch Served All Day</div>
+        <table class="menu">
+  <tbody>
+      <tr> &nbsp;</tr>
+      <tr class="menuheader">
+      <td class="menuitem" colspan="2">Pizza (Slice) &nbsp;</td>
+      <td>Small</td>
+          <td>Quantity</td>
+      <td>Large</td>
+          <td>Quantity</td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Cheese&nbsp;</td>
+      <td>&#36; 1.99</td>
+        <td><input type="number" name="lunchcheeseSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="lunchcheeseLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false">
+</td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Pepperoni&nbsp;</td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="lunchpeppSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="lunchpeppLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+      
+    <tr>
+      <td class="menuitem" colspan="2">Chicken&nbsp;</td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="lunchchickSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="lunchchickLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr><tr> &nbsp;</tr>
+            <tr class="menuheader">
+      <td class="menuitem" colspan="2">Pasta&nbsp;</td>
+      <td>Mini</td>
+                <td>Quantity</td>
+      <td>Small</td>
+                <td>Quantity</td>
+    </tr>
+      <tr>
+      <td class="menuitem" colspan="2">Mac &amp; Cheese&nbsp;</td>
+      <td>&#36; 1.99</td>
+          <td><input type="number" name="lunchmacSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 2.99</td>
+          <td><input type="number" name="lunchmacLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Spaghetti&nbsp;</td>
+      <td>&#36; 1.99</td>
+        <td><input type="number" name="lunchspagSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="lunchspagLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+      
+    <tr>
+      <td class="menuitem" colspan="2">Fettucine Alfredo&nbsp;</td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="lunchfettSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="lunchfettLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr><tr> &nbsp;</tr>
+      <tr class="menuheader">
+      <td class="menuitem" colspan="2">Half-Sandwich&nbsp;</td>
+      <td>Solo</td>
+          <td>Quantity</td>
+      <td>Meal</td>
+          <td>Quantity</td>
+    </tr>
+      <tr><td colspan="6" class="details">Solo sandwiches are sandwich only. Meals include a side of fries and pickle.&nbsp;</td></tr>
+    <tr>
+      <td class="menuitem" colspan="2">Chicken&nbsp;</td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="lunchchicksandSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 4.99</td>
+        <td><input type="number" name="lunchchicksandLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Cheeseburger&nbsp;</td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="lunchburgSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 4.99</td>
+        <td><input type="number" name="lunchburgLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Roast Beef&nbsp;</td>
+      <td>&#36; 4.99</td>
+        <td><input type="number" name="lunchroastSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 5.99</td>
+        <td><input type="number" name="lunchroastLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr><tr> &nbsp;</tr>
+      <tr class="menuheader">
+      <td class="menuitem" colspan="2">Chicken&nbsp;</td>
+      <td>2-Piece</td>
+          <td>Quantity</td>
+      <td>4-Piece</td>
+          <td>Quantity</td>
+    </tr>
+      <tr>
+      <td class="menuitem" colspan="2">Nuggets&nbsp;</td>
+      <td>&#36; 0.99</td>
+          <td><input type="number" name="lunchnuggSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 1.49</td>
+          <td><input type="number" name="lunchnuggLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Wings&nbsp;</td>
+      <td>&#36; 1.99</td>
+        <td><input type="number" name="lunchwingSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="lunchwingLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+    <tr>
+      <td class="menuitem" colspan="2">Tenders&nbsp;</td>
+      <td>&#36; 2.99</td>
+        <td><input type="number" name="lunchtendSM" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+      <td>&#36; 3.99</td>
+        <td><input type="number" name="lunchtendLG" min="0" max="99" value="0" step="1" title="Value must be greater than 0 and less than 99." onKeyDown="return false"></td>
+    </tr>
+      
+  </tbody>
+</table>
+      <div>&nbsp;</div>
+      <div class="formwrapper">
+        <table class="menu orderinfo">
+          <tbody>
+            <tr>
+              <th scope="col" colspan="2">Order Information</th>
+                
+            </tr>
+            <tr>
+              <td><label for="fname">First Name:</label></td>
+              <td><input name="fname" id="fname" type="text" placeholder="John" required></td>
+            </tr>
+            <tr>
+              <td><label for="lname">Last Name:</label></td>
+              <td><input name="lname" id="lname" type="text" placeholder="Doe" required></td>
+            </tr>
+            <tr>
+              <td><label for="tel">Primary Phone Number:</label></td>
+              <td><input name="tel" id="tel" type="tel" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Phone number should be in 000-000-0000 format, with dashes included." required></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email Address:</label></td>
+              <td><input type="email" id="email" name="email" placeholder="johndoe@email.com" required></td>
+            </tr>
+          </tbody>
+  </table>
+      </div>
+      <input class="submit" type="submit" value="Place Order!">
+        </form>
+  </div>
     <div id="push"></div>
   <footer> Written by David Rojevsky </footer>
 </div>
