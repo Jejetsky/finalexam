@@ -77,6 +77,18 @@ input{
     font-size: 14px;
     font-style: italic;
 }
+button{
+    margin: auto;
+    border: 1px outset #7C7C7C;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.1s;
+}
+button:hover{
+    filter:brightness(90%);
+    transition: 0.1s;
+    cursor: pointer;
+}
 
 .link a {
     justify-content: center;
@@ -99,7 +111,7 @@ input{
     transition: 0.2s;
 }
 .link:hover {
-    filter: brightness(200%)
+    filter: brightness(150%)
 }
 .home{
     width: 4%;
